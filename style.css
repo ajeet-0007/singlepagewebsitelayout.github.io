@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ background-image: url(elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+}
+.nav-bar{
+    display: flex;
+    background:none;
+    position: sticky;
+    top: 0;
+    background: rgb(29, 28, 28);
+    cursor: pointer;
+}
+
+.logo{
+    width:20%;
+    text-align: center;
+    padding-top: 15px;
+    background: none;
+}
+.logo img{
+    border-radius: 50%;
+    width: 59px;
+    
+}
+.links{
+    width: 60%;
+    background: none;
+  
+}
+.social-links{
+    width: 20%;
+    background:none;
+}
+ul{
+    list-style: none;
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.social-links li a{
+    color:white
+}
+
+.links-inner li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links ul{
+    display: flex;
+}
+.social-links ul{
+    display: flex;
+}
+
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+}
+.vision{
+    width: 100%;
+}
+
+.vision-image img{
+    width: 100%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-style: inherit;
+    font-weight: lighter;
+    font-size:30px;
+}
+
+p{
+    text-align: justify;
+    color: whitesmoke;
+    font-size: medium;
+    font-style: inherit;
+    font-family: cursive;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.btn{
+    width: 100px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+.contactus ul li input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: 30px;
+    padding-left: 30px;
+    font-size: medium;
+    font-family: system-ui;
+}
+.btn-small{
+    margin-left: 75px;
+    margin-bottom: 15px;
+    width: 70px;
+    height: 30px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+    align-self: center;
+}
+
+
+@media  only screen and (max-width: 744px){
+        .nav-bar{
+            flex-direction: column;
+            height: 477px;
+            transition: all  ease-in;
+            transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition-delay: 2sec;
+
+        }
+        .navlist{
+            flex-direction: column;
+        }
+        .logo{
+            align-self: center;
+        }
+        .links{
+            align-self: center;
+        }   
+        .social-links{
+            align-self: center;
+        }
+        .links-inner{
+            flex-direction: column;
+        }
+        .links-inner li{
+            padding:10px;
+        }
+        .social-links-inner li{
+            padding-left: 10px;
+        }
+        .burger{
+            display: block;
+
+        }
+        .h-nav{
+            height: 80px;
+        }
+        .v-class{
+            opacity: 0;
+        }
+}
